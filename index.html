@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PUSH Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!---===== Style.Css ====-->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <!-- --===== Page Body Start ====-- -->
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h2>Sample Table</h2>
+        <button onclick="loadData()" type="button" class="btn btn-primary">
+          Load Data
+        </button>
+        <!-- --===== Table HTML Start ====-- -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="p12">Id</th>
+              <th>Name</th>
+              <th>Url</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

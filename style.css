@@ -1,0 +1,19 @@
+/* ----========= Global CSS =========---- */
+body { padding: 0px; margin: 0px; box-sizing: border-box; }
+
+/* ----========= Page Css Start =========---- */
+.wrapper {
+    width: 100%;
+    margin-top: 80px;
+}
+.wrapper h2 {
+    padding-bottom: 25px;
+    text-align: center;
+}
+.wrapper th.p12 {
+    width: 10%;
+}
+.wrapper .btn {
+    float: right;
+    margin-bottom: 25px;
+}
