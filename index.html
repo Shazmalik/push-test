@@ -18,6 +18,7 @@
   <body>
     <div class="wrapper">
       <div class="container">
+        <h2>PUSH Test</h2>
         <button onclick="loadData()" type="button" class="btn btn-primary">
           Load Data
         </button>
@@ -27,15 +28,11 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="p12">
-                  Id
-                </th>
-                <th>
-                  Name
-                </th>
-                <th>
-                  Url
-                </th>
+                {{#each array.[0]}}
+                  <th class="p12">
+                    {{@key}}
+                  </th>
+                {{/each}}
               </tr>
             </thead>
             <tbody>
