@@ -18,37 +18,39 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <h2>Sample Table</h2>
         <button onclick="loadData()" type="button" class="btn btn-primary">
           Load Data
         </button>
-        <!-- --===== Table HTML Start ====-- -->
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="p12">Id</th>
-              <th>Name</th>
-              <th>Url</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
+        <div id="data"></div>
+        <!-- The script element is used to define the Handlebars template -->
+        <script type="text/x-handlebars-template" id="tableTemplate">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="p12">
+                  Id
+                </th>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Url
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each array}}
+                <tr>
+                  {{#each this}}
+                    <td>
+                      {{this}}
+                    </td>
+                  {{/each}}
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </script>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
